@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Magic Number Website</title>
+</head>
+<body>
+  <script>
+    var urlParams = new URLSearchParams(window.location.search);
+    var acnParam = urlParams.get('ACN');
+
+    if (acnParam) {
+      document.write("The magic number is " + acnParam);
+    } else {
+      document.write("No magic number found.");
+    }
+  </script>
+</body>
+</html>
